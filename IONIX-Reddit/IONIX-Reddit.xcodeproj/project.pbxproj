@@ -14,6 +14,8 @@
 		36549F522AF679EC006B9A6D /* IONIX_RedditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F512AF679EC006B9A6D /* IONIX_RedditTests.swift */; };
 		36549F5C2AF679EC006B9A6D /* IONIX_RedditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F5B2AF679EC006B9A6D /* IONIX_RedditUITests.swift */; };
 		36549F5E2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F5D2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift */; };
+		36549F702AF67C65006B9A6D /* Image+AssetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F6F2AF67C65006B9A6D /* Image+AssetName.swift */; };
+		36549F722AF67D7D006B9A6D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36549F712AF67D7D006B9A6D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		36549F572AF679EC006B9A6D /* IONIX-RedditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IONIX-RedditUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36549F5B2AF679EC006B9A6D /* IONIX_RedditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IONIX_RedditUITests.swift; sourceTree = "<group>"; };
 		36549F5D2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IONIX_RedditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36549F6F2AF67C65006B9A6D /* Image+AssetName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AssetName.swift"; sourceTree = "<group>"; };
+		36549F712AF67D7D006B9A6D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,17 @@
 		36549F3F2AF679EB006B9A6D /* IONIX-Reddit */ = {
 			isa = PBXGroup;
 			children = (
+				36549F732AF67EBD006B9A6D /* Composition root */,
+				36549F6E2AF67C4F006B9A6D /* Extensions */,
+				36549F6A2AF67BC8006B9A6D /* UI */,
+				36549F742AF67EC7006B9A6D /* Presentation */,
+				36549F752AF67ED4006B9A6D /* Infrastructure */,
+				36549F762AF67EE6006B9A6D /* Data */,
+				36549F772AF67EEE006B9A6D /* Domain */,
+				36549F462AF679EC006B9A6D /* Preview Content */,
 				36549F402AF679EB006B9A6D /* IONIX_RedditApp.swift */,
 				36549F422AF679EB006B9A6D /* ContentView.swift */,
 				36549F442AF679EC006B9A6D /* Assets.xcassets */,
-				36549F462AF679EC006B9A6D /* Preview Content */,
 			);
 			path = "IONIX-Reddit";
 			sourceTree = "<group>";
@@ -125,6 +136,129 @@
 				36549F5D2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift */,
 			);
 			path = "IONIX-RedditUITests";
+			sourceTree = "<group>";
+		};
+		36549F6A2AF67BC8006B9A6D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				36549F782AF67F0E006B9A6D /* Custom views */,
+				36549F712AF67D7D006B9A6D /* Launch Screen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		36549F6E2AF67C4F006B9A6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36549F6F2AF67C65006B9A6D /* Image+AssetName.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36549F732AF67EBD006B9A6D /* Composition root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Composition root";
+			sourceTree = "<group>";
+		};
+		36549F742AF67EC7006B9A6D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		36549F752AF67ED4006B9A6D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				36549F792AF67F43006B9A6D /* Data */,
+				36549F7A2AF67F47006B9A6D /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		36549F762AF67EE6006B9A6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36549F7C2AF67F75006B9A6D /* Cache */,
+				36549F7D2AF67F7B006B9A6D /* Networking */,
+				36549F7E2AF67F83006B9A6D /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36549F772AF67EEE006B9A6D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				36549F7F2AF67F92006B9A6D /* Interfaces */,
+				36549F802AF67F99006B9A6D /* Use cases */,
+				36549F812AF67FA2006B9A6D /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		36549F782AF67F0E006B9A6D /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom views";
+			sourceTree = "<group>";
+		};
+		36549F792AF67F43006B9A6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36549F7A2AF67F47006B9A6D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		36549F7C2AF67F75006B9A6D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		36549F7D2AF67F7B006B9A6D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		36549F7E2AF67F83006B9A6D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		36549F7F2AF67F92006B9A6D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		36549F802AF67F99006B9A6D /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		36549F812AF67FA2006B9A6D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36549F722AF67D7D006B9A6D /* Launch Screen.storyboard in Resources */,
 				36549F482AF679EC006B9A6D /* Preview Assets.xcassets in Resources */,
 				36549F452AF679EC006B9A6D /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +394,7 @@
 			files = (
 				36549F432AF679EB006B9A6D /* ContentView.swift in Sources */,
 				36549F412AF679EB006B9A6D /* IONIX_RedditApp.swift in Sources */,
+				36549F702AF67C65006B9A6D /* Image+AssetName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,8 +564,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +573,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Juancho.IONIX-Reddit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,8 +596,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +605,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Juancho.IONIX-Reddit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
