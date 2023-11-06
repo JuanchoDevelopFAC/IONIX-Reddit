@@ -10,6 +10,9 @@ import SwiftUI
 
 enum AssetName: String {
     case splachScreen = "SplashScreen"
+    case cameraAccess = "CameraAccess"
+    case notificationsAccess = "NotificationsAccess"
+    case locationAccess = "LocationAccess"
     
     var assetName: String {
         return self.rawValue
