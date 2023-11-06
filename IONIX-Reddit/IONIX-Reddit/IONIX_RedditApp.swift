@@ -11,7 +11,7 @@ import SwiftUI
 struct IONIX_RedditApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CarouselNavCoordinatorView()
         }
     }
 }
