@@ -11,7 +11,8 @@ import SwiftUI
 struct IONIX_RedditApp: App {
     var body: some Scene {
         WindowGroup {
-            CarouselNavCoordinatorView()
+            //CarouselNavCoordinatorView()
+            HomeFactory.create()
         }
     }
 }

@@ -11,6 +11,7 @@ import SwiftUI
 enum ColorName: String {
     case orangeColor = "orange"
     case pinkColor = "pink"
+    case grayLightColor = "grayLight"
     
     var colorName: String {
         return self.rawValue
