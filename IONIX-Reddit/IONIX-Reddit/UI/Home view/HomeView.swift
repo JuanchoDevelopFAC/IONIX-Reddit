@@ -35,7 +35,9 @@ struct HomeView: View {
                             .listRowSeparator(.hidden)
                         }
                     }
-                    .searchable(text: $searchText)
+                    .searchable(text: $searchText).onChange(of: searchText, { _, newValue in
+                        homeViewModel.search(postName: newValue)
+                    })
                     .ignoresSafeArea(.all)
                 }
             }
