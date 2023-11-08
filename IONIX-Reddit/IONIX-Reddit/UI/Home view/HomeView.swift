@@ -17,34 +17,30 @@ struct HomeView: View {
     }
     
     var body: some View {
-        ZStack {
-            Color.clear
-                .ignoresSafeArea(.all)
-            
-            VStack {
-                if homeViewModel.showLoadingSpinner {
-                    ProgressView()
-                        .progressViewStyle(.circular)
-                } else {
-                    NavigationStack {
-                        List {
-                            ForEach(homeViewModel.postList, id: \.id) { post in
-                                PostElement(post: post)
-                            }
-                            .listRowBackground(Color.clear)
-                            .listRowSeparator(.hidden)
+        VStack {
+            if homeViewModel.showLoadingSpinner {
+                ProgressView()
+                    .progressViewStyle(.circular)
+            } else {
+                NavigationView {
+                    List {
+                        ForEach(homeViewModel.postList, id: \.id) { post in
+                            PostElement(post: post)
                         }
+                        .listRowBackground(Color.clear)
+                        .listRowSeparator(.hidden)
                     }
-                    .searchable(text: $searchText).onChange(of: searchText, { _, newValue in
-                        homeViewModel.search(postName: newValue)
-                    })
-                    .ignoresSafeArea(.all)
                 }
+                .searchable(text: $searchText).onChange(of: searchText, { _, newValue in
+                    homeViewModel.search(postName: newValue)
+                })
+                .ignoresSafeArea(.all)
             }
         }
         .onAppear {
             homeViewModel.getPostList()
         }
+        .navigationBarBackButtonHidden()
         .alert(isPresented: $homeViewModel.showAlert) {
             Alert(
                 title: Text("Error"),

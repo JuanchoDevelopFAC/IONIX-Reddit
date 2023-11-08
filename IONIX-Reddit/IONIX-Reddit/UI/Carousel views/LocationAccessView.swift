@@ -43,18 +43,21 @@ struct LocationAccessView: View {
             }
             
             Button("Enable") {
-                
+                carouselNavCoordinator.push(.home)
             }
             .buttonStyle(RedditMainButton())
             
             Text("Cancel")
+                .onTapGesture {
+                    carouselNavCoordinator.push(.home)
+                }
                 .foregroundStyle(.gray)
                 .padding(.horizontal, 5)
         }
         .navigationBarBackButtonHidden()
         .onReceive(locationAccessViewModel.$locationPermissionGranted) { value in
             if value {
-                print("NAV TO HOME")
+                carouselNavCoordinator.push(.home)
             }
         }
     }

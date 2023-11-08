@@ -23,12 +23,14 @@ class LocationAccessViewModel: NSObject, ObservableObject, CLLocationManagerDele
             case .authorizedWhenInUse:
                 //Nav to home
                 locationPermissionGranted = true
+                UserDefaults.standard.set(true, forKey: "isFlowAccessCompleted")
                 break
             case .restricted, .denied:
                 locationPermissionGranted = false
                 break
             case .notDetermined:
                 manager.requestWhenInUseAuthorization()
+                UserDefaults.standard.set(true, forKey: "isFlowAccessCompleted")
                 break
             default:
                 locationPermissionGranted = false
