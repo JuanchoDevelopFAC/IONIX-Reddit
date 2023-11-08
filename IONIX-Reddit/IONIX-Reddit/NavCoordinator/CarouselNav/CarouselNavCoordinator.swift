@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 enum CarouselPage: String, Identifiable {
-    case camera, notifications, location
+    case camera, notifications, location, home
     
     var id: String {
         self.rawValue
@@ -33,6 +33,8 @@ class CarouselNavCoordinator: ObservableObject {
             NotificationsAccessView(notificationsAccessViewModel: NotificationsAccessViewModel())
         case .location:
             LocationAccessView(locationAccessViewModel: LocationAccessViewModel())
+        case .home:
+            HomeFactory.create()
         }
     }
 }
