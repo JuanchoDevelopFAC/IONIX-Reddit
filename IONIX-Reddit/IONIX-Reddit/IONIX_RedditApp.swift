@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct IONIX_RedditApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if UserDefaults.standard.bool(forKey: "isFlowAccessCompleted") {
+                HomeFactory.create()
+            } else {
+                CarouselNavCoordinatorView()
+            }
         }
     }
 }

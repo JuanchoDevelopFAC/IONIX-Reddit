@@ -8,12 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		36549F412AF679EB006B9A6D /* IONIX_RedditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F402AF679EB006B9A6D /* IONIX_RedditApp.swift */; };
-		36549F432AF679EB006B9A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F422AF679EB006B9A6D /* ContentView.swift */; };
 		36549F452AF679EC006B9A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36549F442AF679EC006B9A6D /* Assets.xcassets */; };
 		36549F482AF679EC006B9A6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36549F472AF679EC006B9A6D /* Preview Assets.xcassets */; };
 		36549F522AF679EC006B9A6D /* IONIX_RedditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F512AF679EC006B9A6D /* IONIX_RedditTests.swift */; };
 		36549F5C2AF679EC006B9A6D /* IONIX_RedditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F5B2AF679EC006B9A6D /* IONIX_RedditUITests.swift */; };
 		36549F5E2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F5D2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift */; };
+		36549F702AF67C65006B9A6D /* Image+AssetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F6F2AF67C65006B9A6D /* Image+AssetName.swift */; };
+		36549F722AF67D7D006B9A6D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36549F712AF67D7D006B9A6D /* Launch Screen.storyboard */; };
+		36549F832AF68C48006B9A6D /* CameraAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F822AF68C48006B9A6D /* CameraAccessView.swift */; };
+		36549F852AF69861006B9A6D /* RedditMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F842AF69861006B9A6D /* RedditMainButton.swift */; };
+		36549F872AF7D7A0006B9A6D /* Color+ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F862AF7D7A0006B9A6D /* Color+ColorName.swift */; };
+		36549F8B2AF7EB81006B9A6D /* NotificationsAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F8A2AF7EB81006B9A6D /* NotificationsAccessView.swift */; };
+		36549F8D2AF7EBAE006B9A6D /* LocationAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F8C2AF7EBAE006B9A6D /* LocationAccessView.swift */; };
+		36549F912AF7EC89006B9A6D /* CarouselNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F902AF7EC89006B9A6D /* CarouselNavCoordinator.swift */; };
+		36549F932AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F922AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift */; };
+		36C55F9D2AFB0398002F787B /* SearchPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55F9C2AFB0398002F787B /* SearchPostListUseCase.swift */; };
+		36C55FA02AFB0415002F787B /* SearchPostListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55F9F2AFB0415002F787B /* SearchPostListRepository.swift */; };
+		36C55FA32AFB0530002F787B /* APISearchPostListDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55FA22AFB0530002F787B /* APISearchPostListDataSourceType.swift */; };
+		36C55FA52AFB054F002F787B /* APISearchPostListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55FA42AFB054F002F787B /* APISearchPostListDataSource.swift */; };
+		36C55FA72AFB0C4D002F787B /* SearchPostListRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55FA62AFB0C4D002F787B /* SearchPostListRepositoryType.swift */; };
+		36D88E712AF7FE99000A768B /* CameraAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E702AF7FE99000A768B /* CameraAccessViewModel.swift */; };
+		36D88E732AF888BE000A768B /* NotificationsAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E722AF888BE000A768B /* NotificationsAccessViewModel.swift */; };
+		36D88E762AF88E4C000A768B /* LocationAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E752AF88E4C000A768B /* LocationAccessViewModel.swift */; };
+		36D88E782AF94B7D000A768B /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E772AF94B7D000A768B /* URLSessionHTTPClient.swift */; };
+		36D88E7A2AF94BB5000A768B /* URLSessionRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E792AF94BB5000A768B /* URLSessionRequestMaker.swift */; };
+		36D88E7C2AF94BE1000A768B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E7B2AF94BE1000A768B /* HTTPClient.swift */; };
+		36D88E7E2AF94BEE000A768B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E7D2AF94BEE000A768B /* Endpoint.swift */; };
+		36D88E802AF94BFC000A768B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E7F2AF94BFC000A768B /* HTTPMethod.swift */; };
+		36D88E822AF94C07000A768B /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E812AF94C07000A768B /* HTTPClientError.swift */; };
+		36D88E842AF959C2000A768B /* PostListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E832AF959C2000A768B /* PostListRepository.swift */; };
+		36D88E872AF95A2E000A768B /* PostListDomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E862AF95A2E000A768B /* PostListDomainError.swift */; };
+		36D88E892AF95A8C000A768B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E882AF95A8C000A768B /* Post.swift */; };
+		36D88E8B2AF963EE000A768B /* GetPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E8A2AF963EE000A768B /* GetPostListUseCase.swift */; };
+		36D88E8D2AF972CA000A768B /* PostListDomainErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E8C2AF972CA000A768B /* PostListDomainErrorMapper.swift */; };
+		36D88E8F2AF9AB67000A768B /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E8E2AF9AB67000A768B /* Foundation+Extension.swift */; };
+		36D88E912AF9AC53000A768B /* PostListRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E902AF9AC53000A768B /* PostListRepositoryType.swift */; };
+		36D88E942AF9ACD7000A768B /* APIPostListDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E932AF9ACD7000A768B /* APIPostListDataSourceType.swift */; };
+		36D88E962AF9AD0F000A768B /* APIPostListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E952AF9AD0F000A768B /* APIPostListDataSource.swift */; };
+		36D88E982AF9B0F6000A768B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E972AF9B0F6000A768B /* HomeViewModel.swift */; };
+		36D88E9B2AF9B2AD000A768B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E9A2AF9B2AD000A768B /* HomeView.swift */; };
+		36D88E9D2AF9B3D1000A768B /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E9C2AF9B3D1000A768B /* HomeFactory.swift */; };
+		36D88EA22AF9F725000A768B /* PostElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88EA12AF9F725000A768B /* PostElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +71,6 @@
 /* Begin PBXFileReference section */
 		36549F3D2AF679EB006B9A6D /* IONIX-Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IONIX-Reddit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36549F402AF679EB006B9A6D /* IONIX_RedditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IONIX_RedditApp.swift; sourceTree = "<group>"; };
-		36549F422AF679EB006B9A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		36549F442AF679EC006B9A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36549F472AF679EC006B9A6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36549F4D2AF679EC006B9A6D /* IONIX-RedditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IONIX-RedditTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +78,43 @@
 		36549F572AF679EC006B9A6D /* IONIX-RedditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IONIX-RedditUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36549F5B2AF679EC006B9A6D /* IONIX_RedditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IONIX_RedditUITests.swift; sourceTree = "<group>"; };
 		36549F5D2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IONIX_RedditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36549F6F2AF67C65006B9A6D /* Image+AssetName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AssetName.swift"; sourceTree = "<group>"; };
+		36549F712AF67D7D006B9A6D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		36549F822AF68C48006B9A6D /* CameraAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessView.swift; sourceTree = "<group>"; };
+		36549F842AF69861006B9A6D /* RedditMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditMainButton.swift; sourceTree = "<group>"; };
+		36549F862AF7D7A0006B9A6D /* Color+ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ColorName.swift"; sourceTree = "<group>"; };
+		36549F8A2AF7EB81006B9A6D /* NotificationsAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAccessView.swift; sourceTree = "<group>"; };
+		36549F8C2AF7EBAE006B9A6D /* LocationAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessView.swift; sourceTree = "<group>"; };
+		36549F902AF7EC89006B9A6D /* CarouselNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselNavCoordinator.swift; sourceTree = "<group>"; };
+		36549F922AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselNavCoordinatorView.swift; sourceTree = "<group>"; };
+		36C55F9C2AFB0398002F787B /* SearchPostListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListUseCase.swift; sourceTree = "<group>"; };
+		36C55F9F2AFB0415002F787B /* SearchPostListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListRepository.swift; sourceTree = "<group>"; };
+		36C55FA22AFB0530002F787B /* APISearchPostListDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchPostListDataSourceType.swift; sourceTree = "<group>"; };
+		36C55FA42AFB054F002F787B /* APISearchPostListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchPostListDataSource.swift; sourceTree = "<group>"; };
+		36C55FA62AFB0C4D002F787B /* SearchPostListRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListRepositoryType.swift; sourceTree = "<group>"; };
+		36D88E702AF7FE99000A768B /* CameraAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewModel.swift; sourceTree = "<group>"; };
+		36D88E722AF888BE000A768B /* NotificationsAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAccessViewModel.swift; sourceTree = "<group>"; };
+		36D88E742AF889BA000A768B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36D88E752AF88E4C000A768B /* LocationAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessViewModel.swift; sourceTree = "<group>"; };
+		36D88E772AF94B7D000A768B /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		36D88E792AF94BB5000A768B /* URLSessionRequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestMaker.swift; sourceTree = "<group>"; };
+		36D88E7B2AF94BE1000A768B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		36D88E7D2AF94BEE000A768B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		36D88E7F2AF94BFC000A768B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		36D88E812AF94C07000A768B /* HTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientError.swift; sourceTree = "<group>"; };
+		36D88E832AF959C2000A768B /* PostListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRepository.swift; sourceTree = "<group>"; };
+		36D88E862AF95A2E000A768B /* PostListDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDomainError.swift; sourceTree = "<group>"; };
+		36D88E882AF95A8C000A768B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		36D88E8A2AF963EE000A768B /* GetPostListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListUseCase.swift; sourceTree = "<group>"; };
+		36D88E8C2AF972CA000A768B /* PostListDomainErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDomainErrorMapper.swift; sourceTree = "<group>"; };
+		36D88E8E2AF9AB67000A768B /* Foundation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
+		36D88E902AF9AC53000A768B /* PostListRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRepositoryType.swift; sourceTree = "<group>"; };
+		36D88E932AF9ACD7000A768B /* APIPostListDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostListDataSourceType.swift; sourceTree = "<group>"; };
+		36D88E952AF9AD0F000A768B /* APIPostListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostListDataSource.swift; sourceTree = "<group>"; };
+		36D88E972AF9B0F6000A768B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		36D88E9A2AF9B2AD000A768B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		36D88E9C2AF9B3D1000A768B /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		36D88EA12AF9F725000A768B /* PostElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +165,18 @@
 		36549F3F2AF679EB006B9A6D /* IONIX-Reddit */ = {
 			isa = PBXGroup;
 			children = (
-				36549F402AF679EB006B9A6D /* IONIX_RedditApp.swift */,
-				36549F422AF679EB006B9A6D /* ContentView.swift */,
-				36549F442AF679EC006B9A6D /* Assets.xcassets */,
+				36D88E742AF889BA000A768B /* Info.plist */,
+				36549F8E2AF7EC54006B9A6D /* NavCoordinator */,
+				36549F732AF67EBD006B9A6D /* Composition root */,
+				36549F6E2AF67C4F006B9A6D /* Extensions */,
+				36549F6A2AF67BC8006B9A6D /* UI */,
+				36549F742AF67EC7006B9A6D /* Presentation */,
+				36549F752AF67ED4006B9A6D /* Infrastructure */,
+				36549F762AF67EE6006B9A6D /* Data */,
+				36549F772AF67EEE006B9A6D /* Domain */,
 				36549F462AF679EC006B9A6D /* Preview Content */,
+				36549F402AF679EB006B9A6D /* IONIX_RedditApp.swift */,
+				36549F442AF679EC006B9A6D /* Assets.xcassets */,
 			);
 			path = "IONIX-Reddit";
 			sourceTree = "<group>";
@@ -125,6 +204,226 @@
 				36549F5D2AF679EC006B9A6D /* IONIX_RedditUITestsLaunchTests.swift */,
 			);
 			path = "IONIX-RedditUITests";
+			sourceTree = "<group>";
+		};
+		36549F6A2AF67BC8006B9A6D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				36549F782AF67F0E006B9A6D /* Custom views */,
+				36D88E992AF9B2A0000A768B /* Home view */,
+				36D88E6D2AF7FAEA000A768B /* Carousel views */,
+				36549F712AF67D7D006B9A6D /* Launch Screen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		36549F6E2AF67C4F006B9A6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36549F6F2AF67C65006B9A6D /* Image+AssetName.swift */,
+				36549F862AF7D7A0006B9A6D /* Color+ColorName.swift */,
+				36D88E8E2AF9AB67000A768B /* Foundation+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36549F732AF67EBD006B9A6D /* Composition root */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E9C2AF9B3D1000A768B /* HomeFactory.swift */,
+			);
+			path = "Composition root";
+			sourceTree = "<group>";
+		};
+		36549F742AF67EC7006B9A6D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E702AF7FE99000A768B /* CameraAccessViewModel.swift */,
+				36D88E722AF888BE000A768B /* NotificationsAccessViewModel.swift */,
+				36D88E752AF88E4C000A768B /* LocationAccessViewModel.swift */,
+				36D88E972AF9B0F6000A768B /* HomeViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		36549F752AF67ED4006B9A6D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				36549F792AF67F43006B9A6D /* Data */,
+				36549F7A2AF67F47006B9A6D /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		36549F762AF67EE6006B9A6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36549F7C2AF67F75006B9A6D /* Cache */,
+				36549F7D2AF67F7B006B9A6D /* Networking */,
+				36549F7E2AF67F83006B9A6D /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36549F772AF67EEE006B9A6D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				36549F7F2AF67F92006B9A6D /* Interfaces */,
+				36549F802AF67F99006B9A6D /* Use cases */,
+				36549F812AF67FA2006B9A6D /* Entities */,
+				36D88E862AF95A2E000A768B /* PostListDomainError.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		36549F782AF67F0E006B9A6D /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				36549F842AF69861006B9A6D /* RedditMainButton.swift */,
+				36D88EA12AF9F725000A768B /* PostElement.swift */,
+			);
+			path = "Custom views";
+			sourceTree = "<group>";
+		};
+		36549F792AF67F43006B9A6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36549F7A2AF67F47006B9A6D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E772AF94B7D000A768B /* URLSessionHTTPClient.swift */,
+				36D88E792AF94BB5000A768B /* URLSessionRequestMaker.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		36549F7C2AF67F75006B9A6D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		36549F7D2AF67F7B006B9A6D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				36C55FA12AFB0505002F787B /* Search Post List Data Source */,
+				36D88E922AF9AC91000A768B /* Post List Data Source */,
+				36D88E7B2AF94BE1000A768B /* HTTPClient.swift */,
+				36D88E7D2AF94BEE000A768B /* Endpoint.swift */,
+				36D88E7F2AF94BFC000A768B /* HTTPMethod.swift */,
+				36D88E812AF94C07000A768B /* HTTPClientError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		36549F7E2AF67F83006B9A6D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E8C2AF972CA000A768B /* PostListDomainErrorMapper.swift */,
+				36C55F9E2AFB03DD002F787B /* Search Post List Repository */,
+				36D88E852AF95A14000A768B /* Post List Repository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		36549F7F2AF67F92006B9A6D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E902AF9AC53000A768B /* PostListRepositoryType.swift */,
+				36C55FA62AFB0C4D002F787B /* SearchPostListRepositoryType.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		36549F802AF67F99006B9A6D /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E8A2AF963EE000A768B /* GetPostListUseCase.swift */,
+				36C55F9C2AFB0398002F787B /* SearchPostListUseCase.swift */,
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		36549F812AF67FA2006B9A6D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E882AF95A8C000A768B /* Post.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		36549F8E2AF7EC54006B9A6D /* NavCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				36549F8F2AF7EC6E006B9A6D /* CarouselNav */,
+			);
+			path = NavCoordinator;
+			sourceTree = "<group>";
+		};
+		36549F8F2AF7EC6E006B9A6D /* CarouselNav */ = {
+			isa = PBXGroup;
+			children = (
+				36549F902AF7EC89006B9A6D /* CarouselNavCoordinator.swift */,
+				36549F922AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift */,
+			);
+			path = CarouselNav;
+			sourceTree = "<group>";
+		};
+		36C55F9E2AFB03DD002F787B /* Search Post List Repository */ = {
+			isa = PBXGroup;
+			children = (
+				36C55F9F2AFB0415002F787B /* SearchPostListRepository.swift */,
+			);
+			path = "Search Post List Repository";
+			sourceTree = "<group>";
+		};
+		36C55FA12AFB0505002F787B /* Search Post List Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				36C55FA22AFB0530002F787B /* APISearchPostListDataSourceType.swift */,
+				36C55FA42AFB054F002F787B /* APISearchPostListDataSource.swift */,
+			);
+			path = "Search Post List Data Source";
+			sourceTree = "<group>";
+		};
+		36D88E6D2AF7FAEA000A768B /* Carousel views */ = {
+			isa = PBXGroup;
+			children = (
+				36549F822AF68C48006B9A6D /* CameraAccessView.swift */,
+				36549F8A2AF7EB81006B9A6D /* NotificationsAccessView.swift */,
+				36549F8C2AF7EBAE006B9A6D /* LocationAccessView.swift */,
+			);
+			path = "Carousel views";
+			sourceTree = "<group>";
+		};
+		36D88E852AF95A14000A768B /* Post List Repository */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E832AF959C2000A768B /* PostListRepository.swift */,
+			);
+			path = "Post List Repository";
+			sourceTree = "<group>";
+		};
+		36D88E922AF9AC91000A768B /* Post List Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E932AF9ACD7000A768B /* APIPostListDataSourceType.swift */,
+				36D88E952AF9AD0F000A768B /* APIPostListDataSource.swift */,
+			);
+			path = "Post List Data Source";
+			sourceTree = "<group>";
+		};
+		36D88E992AF9B2A0000A768B /* Home view */ = {
+			isa = PBXGroup;
+			children = (
+				36D88E9A2AF9B2AD000A768B /* HomeView.swift */,
+			);
+			path = "Home view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36549F722AF67D7D006B9A6D /* Launch Screen.storyboard in Resources */,
 				36549F482AF679EC006B9A6D /* Preview Assets.xcassets in Resources */,
 				36549F452AF679EC006B9A6D /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +557,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36549F432AF679EB006B9A6D /* ContentView.swift in Sources */,
+				36549F8D2AF7EBAE006B9A6D /* LocationAccessView.swift in Sources */,
+				36D88E982AF9B0F6000A768B /* HomeViewModel.swift in Sources */,
+				36D88E7A2AF94BB5000A768B /* URLSessionRequestMaker.swift in Sources */,
 				36549F412AF679EB006B9A6D /* IONIX_RedditApp.swift in Sources */,
+				36549F702AF67C65006B9A6D /* Image+AssetName.swift in Sources */,
+				36D88E762AF88E4C000A768B /* LocationAccessViewModel.swift in Sources */,
+				36D88EA22AF9F725000A768B /* PostElement.swift in Sources */,
+				36D88E912AF9AC53000A768B /* PostListRepositoryType.swift in Sources */,
+				36D88E732AF888BE000A768B /* NotificationsAccessViewModel.swift in Sources */,
+				36549F932AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift in Sources */,
+				36D88E782AF94B7D000A768B /* URLSessionHTTPClient.swift in Sources */,
+				36549F912AF7EC89006B9A6D /* CarouselNavCoordinator.swift in Sources */,
+				36D88E9D2AF9B3D1000A768B /* HomeFactory.swift in Sources */,
+				36D88E822AF94C07000A768B /* HTTPClientError.swift in Sources */,
+				36D88E9B2AF9B2AD000A768B /* HomeView.swift in Sources */,
+				36C55FA52AFB054F002F787B /* APISearchPostListDataSource.swift in Sources */,
+				36C55FA32AFB0530002F787B /* APISearchPostListDataSourceType.swift in Sources */,
+				36D88E712AF7FE99000A768B /* CameraAccessViewModel.swift in Sources */,
+				36D88E962AF9AD0F000A768B /* APIPostListDataSource.swift in Sources */,
+				36C55FA72AFB0C4D002F787B /* SearchPostListRepositoryType.swift in Sources */,
+				36D88E7E2AF94BEE000A768B /* Endpoint.swift in Sources */,
+				36D88E892AF95A8C000A768B /* Post.swift in Sources */,
+				36C55FA02AFB0415002F787B /* SearchPostListRepository.swift in Sources */,
+				36549F832AF68C48006B9A6D /* CameraAccessView.swift in Sources */,
+				36D88E802AF94BFC000A768B /* HTTPMethod.swift in Sources */,
+				36D88E842AF959C2000A768B /* PostListRepository.swift in Sources */,
+				36D88E8B2AF963EE000A768B /* GetPostListUseCase.swift in Sources */,
+				36C55F9D2AFB0398002F787B /* SearchPostListUseCase.swift in Sources */,
+				36D88E8D2AF972CA000A768B /* PostListDomainErrorMapper.swift in Sources */,
+				36D88E7C2AF94BE1000A768B /* HTTPClient.swift in Sources */,
+				36D88E942AF9ACD7000A768B /* APIPostListDataSourceType.swift in Sources */,
+				36D88E872AF95A2E000A768B /* PostListDomainError.swift in Sources */,
+				36D88E8F2AF9AB67000A768B /* Foundation+Extension.swift in Sources */,
+				36549F872AF7D7A0006B9A6D /* Color+ColorName.swift in Sources */,
+				36549F852AF69861006B9A6D /* RedditMainButton.swift in Sources */,
+				36549F8B2AF7EB81006B9A6D /* NotificationsAccessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +759,16 @@
 				DEVELOPMENT_TEAM = P34TF3795N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IONIX-Reddit/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +776,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Juancho.IONIX-Reddit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,11 +796,16 @@
 				DEVELOPMENT_TEAM = P34TF3795N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IONIX-Reddit/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +813,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Juancho.IONIX-Reddit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
