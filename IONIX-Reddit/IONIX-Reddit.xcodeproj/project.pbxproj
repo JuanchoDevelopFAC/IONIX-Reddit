@@ -22,7 +22,11 @@
 		36549F8D2AF7EBAE006B9A6D /* LocationAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F8C2AF7EBAE006B9A6D /* LocationAccessView.swift */; };
 		36549F912AF7EC89006B9A6D /* CarouselNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F902AF7EC89006B9A6D /* CarouselNavCoordinator.swift */; };
 		36549F932AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36549F922AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift */; };
-		36C55F9B2AFAFF12002F787B /* SearchPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55F9A2AFAFF12002F787B /* SearchPostListUseCase.swift */; };
+		36C55F9D2AFB0398002F787B /* SearchPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55F9C2AFB0398002F787B /* SearchPostListUseCase.swift */; };
+		36C55FA02AFB0415002F787B /* SearchPostListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55F9F2AFB0415002F787B /* SearchPostListRepository.swift */; };
+		36C55FA32AFB0530002F787B /* APISearchPostListDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55FA22AFB0530002F787B /* APISearchPostListDataSourceType.swift */; };
+		36C55FA52AFB054F002F787B /* APISearchPostListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55FA42AFB054F002F787B /* APISearchPostListDataSource.swift */; };
+		36C55FA72AFB0C4D002F787B /* SearchPostListRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55FA62AFB0C4D002F787B /* SearchPostListRepositoryType.swift */; };
 		36D88E712AF7FE99000A768B /* CameraAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E702AF7FE99000A768B /* CameraAccessViewModel.swift */; };
 		36D88E732AF888BE000A768B /* NotificationsAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E722AF888BE000A768B /* NotificationsAccessViewModel.swift */; };
 		36D88E762AF88E4C000A768B /* LocationAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D88E752AF88E4C000A768B /* LocationAccessViewModel.swift */; };
@@ -83,7 +87,11 @@
 		36549F8C2AF7EBAE006B9A6D /* LocationAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessView.swift; sourceTree = "<group>"; };
 		36549F902AF7EC89006B9A6D /* CarouselNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselNavCoordinator.swift; sourceTree = "<group>"; };
 		36549F922AF7ECA7006B9A6D /* CarouselNavCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselNavCoordinatorView.swift; sourceTree = "<group>"; };
-		36C55F9A2AFAFF12002F787B /* SearchPostListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListUseCase.swift; sourceTree = "<group>"; };
+		36C55F9C2AFB0398002F787B /* SearchPostListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListUseCase.swift; sourceTree = "<group>"; };
+		36C55F9F2AFB0415002F787B /* SearchPostListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListRepository.swift; sourceTree = "<group>"; };
+		36C55FA22AFB0530002F787B /* APISearchPostListDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchPostListDataSourceType.swift; sourceTree = "<group>"; };
+		36C55FA42AFB054F002F787B /* APISearchPostListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchPostListDataSource.swift; sourceTree = "<group>"; };
+		36C55FA62AFB0C4D002F787B /* SearchPostListRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostListRepositoryType.swift; sourceTree = "<group>"; };
 		36D88E702AF7FE99000A768B /* CameraAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewModel.swift; sourceTree = "<group>"; };
 		36D88E722AF888BE000A768B /* NotificationsAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAccessViewModel.swift; sourceTree = "<group>"; };
 		36D88E742AF889BA000A768B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -303,6 +311,7 @@
 		36549F7D2AF67F7B006B9A6D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				36C55FA12AFB0505002F787B /* Search Post List Data Source */,
 				36D88E922AF9AC91000A768B /* Post List Data Source */,
 				36D88E7B2AF94BE1000A768B /* HTTPClient.swift */,
 				36D88E7D2AF94BEE000A768B /* Endpoint.swift */,
@@ -315,6 +324,8 @@
 		36549F7E2AF67F83006B9A6D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				36D88E8C2AF972CA000A768B /* PostListDomainErrorMapper.swift */,
+				36C55F9E2AFB03DD002F787B /* Search Post List Repository */,
 				36D88E852AF95A14000A768B /* Post List Repository */,
 			);
 			path = Repositories;
@@ -324,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				36D88E902AF9AC53000A768B /* PostListRepositoryType.swift */,
+				36C55FA62AFB0C4D002F787B /* SearchPostListRepositoryType.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -332,7 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				36D88E8A2AF963EE000A768B /* GetPostListUseCase.swift */,
-				36C55F9A2AFAFF12002F787B /* SearchPostListUseCase.swift */,
+				36C55F9C2AFB0398002F787B /* SearchPostListUseCase.swift */,
 			);
 			path = "Use cases";
 			sourceTree = "<group>";
@@ -362,6 +374,23 @@
 			path = CarouselNav;
 			sourceTree = "<group>";
 		};
+		36C55F9E2AFB03DD002F787B /* Search Post List Repository */ = {
+			isa = PBXGroup;
+			children = (
+				36C55F9F2AFB0415002F787B /* SearchPostListRepository.swift */,
+			);
+			path = "Search Post List Repository";
+			sourceTree = "<group>";
+		};
+		36C55FA12AFB0505002F787B /* Search Post List Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				36C55FA22AFB0530002F787B /* APISearchPostListDataSourceType.swift */,
+				36C55FA42AFB054F002F787B /* APISearchPostListDataSource.swift */,
+			);
+			path = "Search Post List Data Source";
+			sourceTree = "<group>";
+		};
 		36D88E6D2AF7FAEA000A768B /* Carousel views */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,7 +405,6 @@
 			isa = PBXGroup;
 			children = (
 				36D88E832AF959C2000A768B /* PostListRepository.swift */,
-				36D88E8C2AF972CA000A768B /* PostListDomainErrorMapper.swift */,
 			);
 			path = "Post List Repository";
 			sourceTree = "<group>";
@@ -544,15 +572,19 @@
 				36D88E9D2AF9B3D1000A768B /* HomeFactory.swift in Sources */,
 				36D88E822AF94C07000A768B /* HTTPClientError.swift in Sources */,
 				36D88E9B2AF9B2AD000A768B /* HomeView.swift in Sources */,
+				36C55FA52AFB054F002F787B /* APISearchPostListDataSource.swift in Sources */,
+				36C55FA32AFB0530002F787B /* APISearchPostListDataSourceType.swift in Sources */,
 				36D88E712AF7FE99000A768B /* CameraAccessViewModel.swift in Sources */,
 				36D88E962AF9AD0F000A768B /* APIPostListDataSource.swift in Sources */,
+				36C55FA72AFB0C4D002F787B /* SearchPostListRepositoryType.swift in Sources */,
 				36D88E7E2AF94BEE000A768B /* Endpoint.swift in Sources */,
 				36D88E892AF95A8C000A768B /* Post.swift in Sources */,
+				36C55FA02AFB0415002F787B /* SearchPostListRepository.swift in Sources */,
 				36549F832AF68C48006B9A6D /* CameraAccessView.swift in Sources */,
 				36D88E802AF94BFC000A768B /* HTTPMethod.swift in Sources */,
 				36D88E842AF959C2000A768B /* PostListRepository.swift in Sources */,
 				36D88E8B2AF963EE000A768B /* GetPostListUseCase.swift in Sources */,
-				36C55F9B2AFAFF12002F787B /* SearchPostListUseCase.swift in Sources */,
+				36C55F9D2AFB0398002F787B /* SearchPostListUseCase.swift in Sources */,
 				36D88E8D2AF972CA000A768B /* PostListDomainErrorMapper.swift in Sources */,
 				36D88E7C2AF94BE1000A768B /* HTTPClient.swift in Sources */,
 				36D88E942AF9ACD7000A768B /* APIPostListDataSourceType.swift in Sources */,

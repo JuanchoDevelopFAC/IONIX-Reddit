@@ -14,23 +14,37 @@ final class HomeFactory {
     }
     
     private static func createViewModel() -> HomeViewModel {
-        return HomeViewModel(postListUseCase: createUseCase())
+        return HomeViewModel(postListUseCase: createPostListUseCase(), searchPostListUseCase: createSearchPostUseCase())
     }
     
-    private static func createUseCase() -> GetPostListUseCaseType {
-        return GetPostListUseCase(repository: createRepository())
+    private static func createPostListUseCase() -> GetPostListUseCaseType {
+        return GetPostListUseCase(repository: createPostListRepository())
     }
     
-    private static func createRepository() -> PostListRepositoryType {
+    private static func createPostListRepository() -> PostListRepositoryType {
         return PostListRepository(
-            apiDataSource: createDataSource(),
+            apiDataSource: createPostListDataSource(),
             errorMapper: PostListDomainErrorMapper())
     }
     
-    private static func createDataSource() -> APIPostListDataSourceType {
+    private static func createPostListDataSource() -> APIPostListDataSourceType {
         return APIPostListDataSource(
             httpClient: createHTTPClient()
         )
+    }
+    
+    private static func createSearchPostUseCase() -> SearchPostListUseCaseType {
+        return SearchPostListUseCase(repository: createSearchPostRepository())
+    }
+    
+    private static func createSearchPostRepository() -> SearchPostListRepositoryType {
+        return SearchPostListRepository(
+            apiDataSource: createSearchPostDataSource(),
+            errorMapper: PostListDomainErrorMapper())
+    }
+    
+    private static func createSearchPostDataSource() -> APISearchPostListDataSourceType {
+        return APISearchPostListDataSource(httpClient: createHTTPClient())
     }
     
     private static func createHTTPClient() -> URLSessionHTTPClient {
